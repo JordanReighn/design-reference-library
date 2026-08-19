@@ -1,0 +1,26 @@
+name: Validate plugin package
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate marketplace manifests
+        run: python scripts/validate_manifests.py
+
+      - name: Validate design reference catalog
+        run: python plugins/design-reference-library/skills/design-reference-library/scripts/validate_library.py

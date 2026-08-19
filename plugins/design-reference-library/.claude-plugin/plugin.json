@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "design-reference-library",
+  "displayName": "Design Reference Library",
+  "version": "0.2.0",
+  "description": "Curated brand-inspired design references and synthesis workflows for websites and application interfaces.",
+  "author": {
+    "name": "Jordan Reighn",
+    "url": "https://github.com/JordanReighn"
+  },
+  "homepage": "https://github.com/JordanReighn/design-reference-library",
+  "repository": "https://github.com/JordanReighn/design-reference-library",
+  "license": "MIT",
+  "keywords": ["design", "ui", "ux", "branding", "restyling"],
+  "defaultEnabled": true
+}

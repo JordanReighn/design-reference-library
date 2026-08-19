@@ -21,17 +21,31 @@ codex plugin add design-reference-library@jordanreighn-design
 
 Start a new Codex task after reinstalling the plugin.
 
+For Claude Code, run these commands inside Claude Code:
+
+~~~text
+/plugin marketplace add .
+/plugin install design-reference-library@jordanreighn-design
+/reload-plugins
+~~~
+
 ## Validation
 
 From the repository root:
 
 ~~~powershell
+python scripts/validate_manifests.py
 python plugins/design-reference-library/skills/design-reference-library/scripts/validate_library.py
 python -X utf8 path/to/skill-creator/scripts/quick_validate.py plugins/design-reference-library/skills/design-reference-library
 python path/to/plugin-creator/scripts/validate_plugin.py plugins/design-reference-library
 ~~~
 
-The final two validators ship with Codex's built-in creator skills; adjust their local paths for your installation.
+The final two validators ship with Codex's built-in creator skills; adjust their local paths for your installation. Contributors with Claude Code installed should also run:
+
+~~~powershell
+claude plugin validate . --strict
+claude plugin validate ./plugins/design-reference-library --strict
+~~~
 
 ## Updating upstream references
 

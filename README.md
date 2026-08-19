@@ -3,18 +3,18 @@
 </p>
 
 <p align="center">
-  <strong>A Codex plugin for turning curated visual references into coherent, buildable interface systems.</strong>
+  <strong>A Codex and Claude Code plugin for turning curated visual references into coherent, buildable interface systems.</strong>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-1d1d1f"></a>
   <a href="plugins/design-reference-library/skills/design-reference-library/references/catalog.md"><img alt="74 design references" src="https://img.shields.io/badge/design_references-74-0066CC"></a>
-  <img alt="Codex plugin" src="https://img.shields.io/badge/Codex-plugin-1d1d1f">
+  <img alt="Codex and Claude Code" src="https://img.shields.io/badge/Codex_%2B_Claude_Code-plugin-1d1d1f">
 </p>
 
 ## What it does
 
-Design Reference Library helps Codex restyle websites and application interfaces with a clear visual point of view. It can apply one named direction, recommend references from a mood, blend compatible systems, or synthesize a project-specific DESIGN.md.
+Design Reference Library helps Codex and Claude Code restyle websites and application interfaces with a clear visual point of view. It can apply one named direction, recommend references from a mood, blend compatible systems, or synthesize a project-specific DESIGN.md.
 
 The plugin contains:
 
@@ -26,7 +26,7 @@ The plugin contains:
 
 It preserves the product's content, identity, functionality, and information architecture. References are treated as creative constraints—not instructions to impersonate a brand.
 
-## Install
+## Install in Codex
 
 Add this repository as a Git marketplace:
 
@@ -45,6 +45,34 @@ Start a new Codex task so the plugin is loaded, then try:
 > Use Design Reference Library to restyle this website in an Apple-inspired direction.
 
 The repository follows the plugin packaging structure described in the [official OpenAI plugin documentation](https://developers.openai.com/plugins/build/plugins).
+
+## Install in Claude Code
+
+Inside Claude Code, add the marketplace:
+
+~~~text
+/plugin marketplace add JordanReighn/design-reference-library
+~~~
+
+Install the plugin:
+
+~~~text
+/plugin install design-reference-library@jordanreighn-design
+~~~
+
+If Claude Code asks for it, run:
+
+~~~text
+/reload-plugins
+~~~
+
+Claude can invoke the skill automatically from a relevant request. You can also invoke it explicitly:
+
+~~~text
+/design-reference-library:design-reference-library Restyle this website in an Apple-inspired direction
+~~~
+
+The Claude package follows Anthropic's [official plugin](https://code.claude.com/docs/en/plugins) and [marketplace](https://code.claude.com/docs/en/plugin-marketplaces) structures.
 
 ## Example prompts
 
@@ -96,8 +124,10 @@ Browse the complete [design reference catalog](plugins/design-reference-library/
 ~~~text
 .
 ├── .agents/plugins/marketplace.json
+├── .claude-plugin/marketplace.json
 ├── plugins/design-reference-library/
 │   ├── .codex-plugin/plugin.json
+│   ├── .claude-plugin/plugin.json
 │   └── skills/design-reference-library/
 │       ├── SKILL.md
 │       ├── agents/openai.yaml
@@ -109,6 +139,7 @@ Browse the complete [design reference catalog](plugins/design-reference-library/
 │           ├── sync_upstream.py
 │           └── validate_library.py
 ├── docs/EXAMPLES.md
+├── scripts/validate_manifests.py
 ├── LICENSE
 └── NOTICE.md
 ~~~
@@ -119,6 +150,7 @@ From the repository root:
 
 ~~~powershell
 python plugins/design-reference-library/skills/design-reference-library/scripts/sync_upstream.py
+python scripts/validate_manifests.py
 python plugins/design-reference-library/skills/design-reference-library/scripts/validate_library.py
 ~~~
 

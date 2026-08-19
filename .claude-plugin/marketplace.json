@@ -1,0 +1,28 @@
+{
+  "name": "jordanreighn-design",
+  "owner": {
+    "name": "Jordan Reighn",
+    "url": "https://github.com/JordanReighn"
+  },
+  "description": "Design plugins for turning curated visual references into coherent, buildable interface systems.",
+  "version": "0.2.0",
+  "plugins": [
+    {
+      "name": "design-reference-library",
+      "displayName": "Design Reference Library",
+      "source": "./plugins/design-reference-library",
+      "description": "Apply curated brand-inspired design languages to websites and application interfaces.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Jordan Reighn",
+        "url": "https://github.com/JordanReighn"
+      },
+      "homepage": "https://github.com/JordanReighn/design-reference-library",
+      "repository": "https://github.com/JordanReighn/design-reference-library",
+      "license": "MIT",
+      "keywords": ["design", "ui", "ux", "branding", "restyling"],
+      "category": "development",
+      "tags": ["design-system", "frontend", "art-direction", "design-reference"]
+    }
+  ]
+}

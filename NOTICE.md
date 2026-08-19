@@ -18,6 +18,6 @@ plugins/design-reference-library/skills/design-reference-library/references/upst
 
 ## Plugin adaptation
 
-The Codex plugin packaging, reference-selection workflow, synthesis guidance, validation tooling, and public documentation are maintained by Jordan Reighn and distributed under the repository's MIT License.
+The Codex and Claude Code plugin packaging, reference-selection workflow, synthesis guidance, validation tooling, and public documentation are maintained by Jordan Reighn and distributed under the repository's MIT License.
 
 Brand names and trademarks identify sources of visual inspiration. Their inclusion does not imply sponsorship, endorsement, or affiliation.
