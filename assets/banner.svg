@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title description">
+  <title id="title">Design Reference Library</title>
+  <desc id="description">A black editorial banner with white typography, modular cards, and a blue accent.</desc>
+  <rect width="1200" height="420" rx="28" fill="#000000"/>
+  <rect x="54" y="48" width="1092" height="324" rx="22" fill="#1d1d1f" stroke="#3a3a3c"/>
+  <circle cx="102" cy="94" r="9" fill="#0066cc"/>
+  <text x="126" y="100" fill="#a1a1a6" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="600" letter-spacing="1.8">CODEX PLUGIN</text>
+  <text x="92" y="204" fill="#f5f5f7" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="58" font-weight="650" letter-spacing="-2.5">Design Reference Library</text>
+  <text x="94" y="250" fill="#a1a1a6" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="23">Design with a point of view.</text>
+  <rect x="94" y="298" width="128" height="40" rx="20" fill="#0066cc"/>
+  <text x="158" y="324" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="600">74 references</text>
+  <rect x="836" y="91" width="246" height="64" rx="16" fill="#f5f5f7"/>
+  <rect x="836" y="171" width="116" height="116" rx="18" fill="#0066cc"/>
+  <rect x="968" y="171" width="114" height="54" rx="16" fill="#f5f5f7"/>
+  <rect x="968" y="241" width="114" height="96" rx="16" fill="#2c2c2e" stroke="#4a4a4d"/>
+</svg>

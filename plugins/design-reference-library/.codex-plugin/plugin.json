@@ -1,0 +1,29 @@
+{
+  "name": "design-reference-library",
+  "version": "0.1.0",
+  "description": "Curated brand-inspired design references and synthesis workflows for websites and application interfaces.",
+  "author": {
+    "name": "Jordan Reighn",
+    "url": "https://github.com/JordanReighn"
+  },
+  "homepage": "https://github.com/JordanReighn/design-reference-library",
+  "repository": "https://github.com/JordanReighn/design-reference-library",
+  "license": "MIT",
+  "keywords": ["design", "ui", "ux", "branding", "restyling"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Design Reference Library",
+    "shortDescription": "Restyle interfaces with curated design references.",
+    "longDescription": "Discover, synthesize, and apply curated brand-inspired design languages to websites and application interfaces while preserving product identity and accessibility.",
+    "developerName": "Jordan Reighn",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://github.com/JordanReighn/design-reference-library",
+    "defaultPrompt": [
+      "Restyle this website in an Apple-inspired direction.",
+      "Blend Linear and Stripe into a project DESIGN.md.",
+      "Recommend a design language for this product."
+    ],
+    "brandColor": "#0066CC"
+  }
+}

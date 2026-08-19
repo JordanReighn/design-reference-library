@@ -1,0 +1,20 @@
+{
+  "name": "jordanreighn-design",
+  "interface": {
+    "displayName": "Jordan Reighn Design"
+  },
+  "plugins": [
+    {
+      "name": "design-reference-library",
+      "source": {
+        "source": "local",
+        "path": "./plugins/design-reference-library"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
